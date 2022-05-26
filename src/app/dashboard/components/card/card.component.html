@@ -1,0 +1,7 @@
+<div class="card" [class.active]="isActive" (click)="selectCharacter(character)">
+    <img [src]="character.image" [alt]="character.name">
+    <div class="container">
+        <h4><b>{{ character.name }}</b></h4>
+        <p>{{ character.species }} - {{ character.status }}</p>
+    </div>
+</div>

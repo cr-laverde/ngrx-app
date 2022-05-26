@@ -1,0 +1,11 @@
+<div class="content">
+  
+  <app-card 
+    *ngFor="let character of characters"
+    [character]="character"
+    [isActive]="isActive(character.id)"
+    (characterSelected)="updateCharactersSelected($event)"></app-card>
+
+  <div *ngIf="loading"> Loading... </div>
+  
+</div>
